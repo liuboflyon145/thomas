@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+dependencies {
+    compile (':thomas:dubbo-api')
+    compile(':thomas:dubbo-consumer')
+    compile(':thomas:dubbo-provider')
+    compile(':thomas:netty-io')
+    compile(':thomas:basejava')
+    compile(':thomas:mq')
+    compile(':thomas:my-kafka')
+    compile(':thomas:protobuf')
+}
+
+defaultTasks 'clean'
